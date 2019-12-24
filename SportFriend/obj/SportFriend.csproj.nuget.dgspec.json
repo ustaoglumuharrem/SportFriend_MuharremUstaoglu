@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_HW5\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj": {}
+    "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_301\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_HW5\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj": {
+    "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_301\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_HW5\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj",
+        "projectUniqueName": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_301\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj",
         "projectName": "SportFriend",
-        "projectPath": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_HW5\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj",
+        "projectPath": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_301\\SportFriend_MuharremUstaoglu\\SportFriend\\SportFriend.csproj",
         "packagesPath": "C:\\Users\\Muharrem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_HW5\\SportFriend_MuharremUstaoglu\\SportFriend\\obj\\",
+        "outputPath": "C:\\Users\\Muharrem\\Desktop\\MuharremUstaoglu_301\\SportFriend_MuharremUstaoglu\\SportFriend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Muharrem\\AppData\\Roaming\\NuGet\\NuGet.Config",
