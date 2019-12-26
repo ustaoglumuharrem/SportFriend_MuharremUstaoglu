@@ -92,3 +92,5 @@ C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\Spor
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SportFriend.csproj.CopyComplete
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SportFriend.dll
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SportFriend.pdb
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\User.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\User.baml

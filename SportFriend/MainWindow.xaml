@@ -5,36 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportFriend"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="MainWindow" Height="600" Width="800" ResizeMode="NoResize">
     <Grid >
         <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="120px" ></ColumnDefinition>
+            <ColumnDefinition Width="180px" ></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="180px"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="150" ></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition  Height="150"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="logo" Grid.Row="0" Grid.Column="0" RenderTransformOrigin="0.5,0.5" Text="Sport Friend" FontWeight="Bold" FontFamily="Arial Black" Margin="1,16,479,79" Grid.RowSpan="2" Grid.ColumnSpan="2" FontSize="16">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-30"/>
-                    <TranslateTransform X="15" Y="28"/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock Grid.Column="1" Name="textblocklogin" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Member Login" FontSize="30" FontWeight="Bold" FontFamily="Articulate Extrabold" Margin="99,0,0,0" />
-        <TextBlock x:Name="txtblockUserName" Grid.Row="1" Grid.Column="0" Text="Username" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,14,0"/>
-        <TextBox x:Name="txtUserName" Grid.Row="1" Grid.Column="1" Margin="20"   />
-        <TextBlock  x:Name="txtblockPassword" Grid.Row="2" Grid.Column="0" Text="Password" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,14,0" />
-        <TextBox x:Name="txtPassword" Grid.Row="2" Grid.Column="1" Margin="20" />
-        <Button x:Name="btnLogin" Grid.Row="3" Grid.Column="0" 
-            HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF505E69" Grid.ColumnSpan="2"  Content="Login" IsCancel="True" FontSize="30" BorderThickness="0,0,0,0" FontWeight="Bold" Margin="49,0,0,0" Foreground="#FFF3F3F3" Cursor="No" Width="266" Click="btnLogin_Click">
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="User Name"  VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Password" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" />
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Sport Friend" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold"   />
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="SIGN IN" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="#FF2F4FD9" />
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtUserName" Background="#FFF4F4F4"   FontSize="20" Margin="104,70,0,0" Grid.RowSpan="2"  />
 
-        </Button>
+
+
+        <PasswordBox Grid.Row="2" Grid.Column="1"  Name="txtUserPassword" Background="#FFF4F4F4" Margin="104,70,0,0" Grid.RowSpan="2"/>
+        <Border BorderThickness="3" BorderBrush="Gray" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="343" Margin="170,95,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="455"/>
+        <Button Grid.Row="4" Grid.Column="1"  Name="btnLogin" Content="Login" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Background="#FF5B965B" Click="btnLogin_Click_1"  />
+
+
+
     </Grid>
 </Window>

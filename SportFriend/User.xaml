@@ -1,0 +1,53 @@
+﻿<Window x:Class="SportFriend.User"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportFriend"
+        mc:Ignorable="d"
+        Title="User" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Text="SPORT FRIEND" FontSize="50" RenderTransformOrigin="0.5,0.5" Margin="-92,15,512,21" Grid.ColumnSpan="2"  >
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform Y="90"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Border Grid.Row="0" Grid.Column="0" Background="#FF5858F3"></Border>
+        <Border Grid.Row="5" Grid.Column="0" Background="#FF5858F3"></Border>
+        <Border BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Center" Height="589" Margin="0,1,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="196"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Operations" FontSize="40" FontWeight="Bold" Margin="0,63,0,0" Width="401"></TextBlock>
+        <Button Grid.Column="1" Name="btnCreateD" Content="Create Demand" FontSize="30" Margin="0,116,0,0" Grid.RowSpan="2" Background="#FFFFB6C8" HorizontalAlignment="Left" Width="401"/>
+        <Button Grid.Row="1" Name="btnCreatedD" Grid.Column="1" Content="Created Demand" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="401" Background="#FFFFB6C8" />
+        <Button Grid.Row="2" Name="btnCreatedE" Grid.Column="1" Content="Created Events" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="398" Background="#FFFFB6C8" />
+        <Button  Grid.Row="3" Name="btnChangePassword" Grid.Column="1" Content="Change Password" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="396" Background="#FFFFB6C8" Click="btnChangePassword_Click"/>
+
+        <Border BorderThickness="3" BorderBrush="Black" Grid.Column="1" HorizontalAlignment="Left" Height="114" VerticalAlignment="Center" Width="594"/>
+        <Border Width="200" Height="600" Grid.Column="1" Grid.Row="0" Grid.RowSpan="5" Margin="398,-12,2,-8" Background="#FF5858F3" ></Border>
+
+
+    </Grid>
+</Window>

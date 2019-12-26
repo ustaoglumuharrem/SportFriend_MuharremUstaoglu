@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SportFriend.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,8 +26,30 @@ namespace SportFriend
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+       
+
+        public void btnLogin_Click_1(object sender, RoutedEventArgs e)
         {
+            SportUserService sportUserService = new SportUserService();
+
+
+            var loginUser = sportUserService.Login(txtUserName.Text, txtUserPassword.Password);
+            if (loginUser == null)
+            {
+                MessageBox.Show("UserName or password is wrong");
+            }
+            else
+            {
+                /// Doğru giriş yapıldı.
+                User user = new User(loginUser);
+                user.Show();
+                this.Close();
+            }
+
+
+
+
+
 
         }
     }
