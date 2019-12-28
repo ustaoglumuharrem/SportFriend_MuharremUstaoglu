@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\App.xaml
-2-399540238
+7616746034
 
-12-1493789688
+18266338879
 2101211972042
-MainWindow.xaml;User.xaml;
+AddDemandWindow.xaml;ChangePasswordWindow.xaml;CreateDemandWindow.xaml;CreatedEventWindow.xaml;EventWindow.xaml;MainWindow.xaml;User.xaml;
 
-False
+True
 

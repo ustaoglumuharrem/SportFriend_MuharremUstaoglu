@@ -8,8 +8,11 @@ namespace SportFriend.Data
    public class Demands
     {
         public int Id { get; set; }
-        [Required]
-
+        
+        
+        public string Creator { get; set; }
+       
+        public string Participator { get; set; }
         public string Content { get; set; }
 
 

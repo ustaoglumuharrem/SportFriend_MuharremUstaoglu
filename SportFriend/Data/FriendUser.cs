@@ -7,22 +7,23 @@ namespace SportFriend.Data
 {
     public class FriendUser
     {
-        public int Id { get; set; }
         [Required]
-    
-        
+        public int Id { get; set; }
+
+
+        [Required]
+        [StringLength(50, MinimumLength = 2)]
         public string Name { get; set; }
+
         [Required]
         [StringLength(50, MinimumLength = 2)]
 
         public string Surname { get; set; }
         [Required]
-        [StringLength(50, MinimumLength = 2)]
-
-        public string UserName { get; set; }
-        [Required]
         [StringLength(256)]
 
+        public string UserName { get; set; }
+        
         public DateTime BirthDate { get; set; }
         public string Password { get; set; }
 
@@ -30,6 +31,7 @@ namespace SportFriend.Data
         public DateTime CreatedDate { get; set; }
 
         public int RoleId { get; set; }
+
 
 
 

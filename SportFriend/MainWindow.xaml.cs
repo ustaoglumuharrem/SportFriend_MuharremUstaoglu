@@ -1,4 +1,5 @@
-﻿using SportFriend.Service;
+﻿using SportFriend.Data;
+using SportFriend.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,12 +22,18 @@ namespace SportFriend
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        
         public MainWindow()
         {
+           
             InitializeComponent();
         }
 
-       
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
 
         public void btnLogin_Click_1(object sender, RoutedEventArgs e)
         {

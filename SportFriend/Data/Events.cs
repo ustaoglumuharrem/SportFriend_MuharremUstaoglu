@@ -11,6 +11,8 @@ namespace SportFriend.Data
         [Required]
         [StringLength(50, MinimumLength = 4)]
 
+        public string EventCreator { get; set; }
+        [Required]
         public string EventName { get; set; }
         [Required]
         [StringLength(50, MinimumLength = 2)]

@@ -1,0 +1,45 @@
+﻿<Window x:Class="SportFriend.CreateDemandWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportFriend"
+        mc:Ignorable="d"
+        Title="CreateDemandWindow" Height="600" Width="800" Loaded="Window_Loaded_1" ResizeMode="NoResize">
+    <StackPanel>
+
+
+
+        <DataGrid x:Name="dgAddDemand" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="100" Binding="{ Binding Path=Id}" Header="Id"></DataGridTextColumn>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Creator}"  Header="Creator"></DataGridTextColumn>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Content}"  Header="Content"></DataGridTextColumn>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Location}"  Header="Location"></DataGridTextColumn>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Time}" Header="Date" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            <Button x:Name="btnJoin" Content="Join" FontSize="20"/>
+
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+
+
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+
+
+        <Button  Name="btnAdd"  Content="+ Add demand" HorizontalAlignment="Center" FontSize="22" Margin="0,0,0,0"  Width="317" Click="btnAdd_Click"  />
+
+
+
+
+    </StackPanel>
+</Window>

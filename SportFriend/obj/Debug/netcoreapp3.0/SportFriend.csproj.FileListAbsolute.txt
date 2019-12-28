@@ -94,3 +94,13 @@ C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\Spor
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SportFriend.pdb
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\User.g.cs
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\User.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\ChangePasswordWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\ChangePasswordWindow.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\CreateDemandWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\CreatedEventWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\EventWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\CreateDemandWindow.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\CreatedEventWindow.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\EventWindow.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\AddDemandWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\AddDemandWindow.baml

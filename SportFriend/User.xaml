@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportFriend"
         mc:Ignorable="d"
-        Title="User" Height="600" Width="800">
-    <Grid>
+        Title="User" Height="600" Width="800" Loaded="Window_Loaded_1">
+    <Grid Background="#FF7152">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -16,38 +16,24 @@
 
 
         <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-
-
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="1" Text="SPORT FRIEND" FontSize="50" RenderTransformOrigin="0.5,0.5" Margin="-92,15,512,21" Grid.ColumnSpan="2"  >
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform Y="90"/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <Border Grid.Row="0" Grid.Column="0" Background="#FF5858F3"></Border>
-        <Border Grid.Row="5" Grid.Column="0" Background="#FF5858F3"></Border>
-        <Border BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Center" Height="589" Margin="0,1,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="196"/>
-
-        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Operations" FontSize="40" FontWeight="Bold" Margin="0,63,0,0" Width="401"></TextBlock>
-        <Button Grid.Column="1" Name="btnCreateD" Content="Create Demand" FontSize="30" Margin="0,116,0,0" Grid.RowSpan="2" Background="#FFFFB6C8" HorizontalAlignment="Left" Width="401"/>
-        <Button Grid.Row="1" Name="btnCreatedD" Grid.Column="1" Content="Created Demand" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="401" Background="#FFFFB6C8" />
-        <Button Grid.Row="2" Name="btnCreatedE" Grid.Column="1" Content="Created Events" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="398" Background="#FFFFB6C8" />
-        <Button  Grid.Row="3" Name="btnChangePassword" Grid.Column="1" Content="Change Password" FontSize="30"  HorizontalAlignment="Left" Margin="0,116,0,0" Grid.RowSpan="2" Width="396" Background="#FFFFB6C8" Click="btnChangePassword_Click"/>
-
-        <Border BorderThickness="3" BorderBrush="Black" Grid.Column="1" HorizontalAlignment="Left" Height="114" VerticalAlignment="Center" Width="594"/>
-        <Border Width="200" Height="600" Grid.Column="1" Grid.Row="0" Grid.RowSpan="5" Margin="398,-12,2,-8" Background="#FF5858F3" ></Border>
-
+        
+        
+        <TextBlock Grid.Row="0" Grid.Column="0"  Text="Sport Friend" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Name="txtDisplay" FontSize="18" FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center" HorizontalAlignment="Left" Background="#e8d4b4" Padding="5 5 5 5"/>
+        <Button x:Name="CreateDemand" Content="CreateDemand" FontSize="22" FontWeight="Bold" Grid.Row="1" Grid.Column="0" Click="CreateDemand_Click"  />
+        <Button x:Name="Event" Content="Events" FontSize="22" FontWeight="Bold"  Grid.Row="2" Grid.Column="0" Click="Event_Click"  />
+        <Button x:Name="CreatedEvents" Content="Created Events"  Grid.Row="3" FontSize="22" FontWeight="Bold"  Grid.Column="0" Click="CreatedEvents_Click"  />
+        <Button x:Name="PasswordChange" Content="Password Change" FontSize="22" FontWeight="Bold"  Grid.Row="4" Grid.Column="0" Click="PasswordChange_Click" />
+        <Button x:Name="Exit" Content="Exit" Grid.Row="5" FontSize="22" FontWeight="Bold"  Grid.Column="0" Click="Exit_Click" />
+        <DataGrid Grid.Row="1" Grid.Column="1" Grid.RowSpan="5"></DataGrid>
 
     </Grid>
 </Window>
