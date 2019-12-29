@@ -7,9 +7,6 @@
         mc:Ignorable="d"
         Title="CreateDemandWindow" Height="600" Width="800" Loaded="Window_Loaded_1" ResizeMode="NoResize">
     <StackPanel>
-
-
-
         <DataGrid x:Name="dgAddDemand" RowDetailsVisibilityMode="VisibleWhenSelected">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Binding="{ Binding Path=Id}" Header="Id"></DataGridTextColumn>

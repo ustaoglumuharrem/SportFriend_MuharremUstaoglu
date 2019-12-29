@@ -5,8 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportFriend"
         mc:Ignorable="d"
-        Title="CreatedEventWindow" Height="450" Width="800">
-    <Grid>
+        Title="CreatedEventWindow" Height="600" Width="800" Loaded="Window_Loaded" >
+    <StackPanel>
+
+
+
+        <DataGrid x:Name="dgAddEvent1" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="100" Binding="{ Binding Path=Id}" Header="Id"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=EventCreator}"  Header="Creator"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=EventName}"  Header=" Name"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=EventType}"  Header="Event Type"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=EventLocation}"  Header="Location"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=EventDate}" Header="Date" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            <Button x:Name="btnJoin" Content="Join" FontSize="20"/>
+                         
+
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            
+                            <Button x:Name="btnDelete" Content="Delete" FontSize="20"/>
+
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+
+
+                </DataGridTemplateColumn>
+
+
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+
+        <DataGrid x:Name="dgAddEvent2" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="100" Binding="{ Binding Path=EventName}" Header="Event Name"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=UserName}"  Header="Event Participator"></DataGridTextColumn>
+                
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
         
-    </Grid>
+
+
+
+
+    </StackPanel>
 </Window>

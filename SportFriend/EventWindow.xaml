@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportFriend"
         mc:Ignorable="d"
-        Title="EventWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="EventWindow" Height="400" Width="600">
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Background="#FF7152"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="0"  Text="Sport Friend" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Add Event" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Creator" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Event Name" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Event Type" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Location" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Date" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0"/>
+
+
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtCreator1" Margin="204,0,0,0" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtContent1" Margin="204,0,0,0" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtType1" Margin="204,0,0,0" />
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="txtLocation1" Margin="204,0,0,0" />
+        <DatePicker Grid.Row="6" Grid.Column="1" x:Name="datePicker1" Margin="204,0,0,0" />
+
+        <Button Grid.Row="7" Grid.Column="1" x:Name="btnAddEvent" Margin="141,0,153,0" Grid.RowSpan="2" Content="Add Event" FontSize="24" FontWeight="Bold" Background="#4461C7" Click="btnAddEvent_Click"   />
+
     </Grid>
+
+
+
+
+
+
+
+
 </Window>

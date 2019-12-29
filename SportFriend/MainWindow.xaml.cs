@@ -30,10 +30,10 @@ namespace SportFriend
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+        /*private void InitializeComponent()
         {
             throw new NotImplementedException();
-        }
+        }*/
 
         public void btnLogin_Click_1(object sender, RoutedEventArgs e)
         {
