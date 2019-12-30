@@ -59,5 +59,12 @@ namespace SportFriend
 
 
         }
+
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpWindow signUpWindow = new SignUpWindow(null);
+            signUpWindow.Show();
+
+        }
     }
 }

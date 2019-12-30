@@ -29,10 +29,9 @@
 
 
         <PasswordBox Grid.Row="2" Grid.Column="1"  Name="txtUserPassword" Background="#FFF4F4F4" Margin="104,70,0,0" Grid.RowSpan="2"/>
-        <Border BorderThickness="3" BorderBrush="Gray" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="343" Margin="170,95,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="455"/>
-        <Button Grid.Row="4" Grid.Column="1"  Name="btnLogin" Content="Login" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Background="#FF5B965B" Click="btnLogin_Click_1"  />
+        <Border BorderThickness="3" BorderBrush="Gray" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="385" Margin="170,95,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="455"/>
+        <Button Grid.Row="4" Grid.Column="1"  Name="btnLogin" Content="Login" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" Background="#FF5B965B" Click="btnLogin_Click_1" Width="200"  />
 
-
-
+        <Button x:Name="btnSignUp" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" Content="Sign Up" FontWeight="Bold" FontSize="28" Foreground="White" Margin="0 5 0 10" Background="#FF2F4FD9" Click="btnSignUp_Click" />
     </Grid>
 </Window>

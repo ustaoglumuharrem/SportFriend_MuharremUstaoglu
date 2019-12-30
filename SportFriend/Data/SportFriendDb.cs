@@ -99,7 +99,7 @@ namespace SportFriend.Data
                     Surname = "Ustaoglu",
                     UserName = "Muharrem",
                     BirthDate = new DateTime(1995, 05, 17),
-                    CreatedDate = new DateTime(2019, 05, 17),
+                    
                     Password = new Service.SportUserService().hashPassword("19951995"),
                     RoleId = 1
 
@@ -117,7 +117,7 @@ namespace SportFriend.Data
                    Surname = "Yılmaz",
                    UserName = "Melike",
                    BirthDate = new DateTime(1997, 07, 03),
-                   CreatedDate = new DateTime(2019, 07, 03),
+                 
                    Password = new Service.SportUserService().hashPassword("19971997"),
                    RoleId = 2
 
@@ -137,7 +137,7 @@ namespace SportFriend.Data
                    Surname = "Karahan",
                    UserName = "Kemal",
                    BirthDate = new DateTime(1997, 03, 04),
-                   CreatedDate = new DateTime(2019, 03, 04),
+                
                    Password = new Service.SportUserService().hashPassword("19071907"),
                    RoleId = 2
 
@@ -154,7 +154,7 @@ namespace SportFriend.Data
                    Surname = "Bal",
                    UserName = "YMB",
                    BirthDate = new DateTime(1997, 03, 04),
-                   CreatedDate = new DateTime(2019, 03, 04),
+                  
                    Password = new Service.SportUserService().hashPassword("ymbymb"),
                    RoleId = 2
 
@@ -173,7 +173,7 @@ namespace SportFriend.Data
                     Surname = "Ören",
                     UserName = "Ferhat",
                     BirthDate = new DateTime(1990, 03, 04),
-                    CreatedDate = new DateTime(2019, 03, 04),
+                  
                     Password = new Service.SportUserService().hashPassword("bimbim"),
                     RoleId = 2
 

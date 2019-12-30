@@ -52,7 +52,6 @@ namespace SportFriend.Migrations
                     UserName = table.Column<string>(maxLength: 256, nullable: false),
                     BirthDate = table.Column<DateTime>(nullable: false),
                     Password = table.Column<string>(nullable: true),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
                     RoleId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -101,14 +100,14 @@ namespace SportFriend.Migrations
 
             migrationBuilder.InsertData(
                 table: "FriendUser",
-                columns: new[] { "Id", "BirthDate", "CreatedDate", "Name", "Password", "RoleId", "Surname", "UserName" },
+                columns: new[] { "Id", "BirthDate", "Name", "Password", "RoleId", "Surname", "UserName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(1995, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2019, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "Muharrem", "7ed44ba2e34347320e794c9c897c26ba78c6e98ffeef5303715de062da2d0936", 1, "Ustaoglu", "Muharrem" },
-                    { 2, new DateTime(1997, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2019, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "Melike", "8eb1597386bef1052725a0b67a809818b3b3eb20c76d41c2390373d83ed0ffd3", 2, "Yılmaz", "Melike" },
-                    { 3, new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kemal", "7f21551bb56b76e58e915fe896ff6e94e58fedd72ebeaa49b39d616f9262e9ac", 2, "Karahan", "Kemal" },
-                    { 4, new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Yusuf Mert", "29b49c02d38c638f33a7b730298d90530298720314300a1558915363524a29be", 2, "Bal", "YMB" },
-                    { 5, new DateTime(1990, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ferhat", "ca5197dac80d256f47799fa36ddeb63cf3ba392c7d9c4f0a0160d85406989dba", 2, "Ören", "Ferhat" }
+                    { 1, new DateTime(1995, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), "Muharrem", "7ed44ba2e34347320e794c9c897c26ba78c6e98ffeef5303715de062da2d0936", 1, "Ustaoglu", "Muharrem" },
+                    { 2, new DateTime(1997, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "Melike", "8eb1597386bef1052725a0b67a809818b3b3eb20c76d41c2390373d83ed0ffd3", 2, "Yılmaz", "Melike" },
+                    { 3, new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Kemal", "7f21551bb56b76e58e915fe896ff6e94e58fedd72ebeaa49b39d616f9262e9ac", 2, "Karahan", "Kemal" },
+                    { 4, new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Yusuf Mert", "29b49c02d38c638f33a7b730298d90530298720314300a1558915363524a29be", 2, "Bal", "YMB" },
+                    { 5, new DateTime(1990, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), "Ferhat", "ca5197dac80d256f47799fa36ddeb63cf3ba392c7d9c4f0a0160d85406989dba", 2, "Ören", "Ferhat" }
                 });
 
             migrationBuilder.InsertData(

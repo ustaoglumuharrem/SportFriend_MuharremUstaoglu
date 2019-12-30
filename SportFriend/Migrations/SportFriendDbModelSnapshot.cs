@@ -111,9 +111,6 @@ namespace SportFriend.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)")
@@ -144,7 +141,6 @@ namespace SportFriend.Migrations
                         {
                             Id = 1,
                             BirthDate = new DateTime(1995, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2019, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Muharrem",
                             Password = "7ed44ba2e34347320e794c9c897c26ba78c6e98ffeef5303715de062da2d0936",
                             RoleId = 1,
@@ -155,7 +151,6 @@ namespace SportFriend.Migrations
                         {
                             Id = 2,
                             BirthDate = new DateTime(1997, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2019, 7, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Melike",
                             Password = "8eb1597386bef1052725a0b67a809818b3b3eb20c76d41c2390373d83ed0ffd3",
                             RoleId = 2,
@@ -166,7 +161,6 @@ namespace SportFriend.Migrations
                         {
                             Id = 3,
                             BirthDate = new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Kemal",
                             Password = "7f21551bb56b76e58e915fe896ff6e94e58fedd72ebeaa49b39d616f9262e9ac",
                             RoleId = 2,
@@ -177,7 +171,6 @@ namespace SportFriend.Migrations
                         {
                             Id = 4,
                             BirthDate = new DateTime(1997, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Yusuf Mert",
                             Password = "29b49c02d38c638f33a7b730298d90530298720314300a1558915363524a29be",
                             RoleId = 2,
@@ -188,7 +181,6 @@ namespace SportFriend.Migrations
                         {
                             Id = 5,
                             BirthDate = new DateTime(1990, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2019, 3, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "Ferhat",
                             Password = "ca5197dac80d256f47799fa36ddeb63cf3ba392c7d9c4f0a0160d85406989dba",
                             RoleId = 2,

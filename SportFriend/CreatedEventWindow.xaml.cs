@@ -38,5 +38,14 @@ namespace SportFriend
 
 
         }
+
+        private void btnJoin_Click(object sender, RoutedEventArgs e)
+        {
+
+            
+
+
+
+        }
     }
 }

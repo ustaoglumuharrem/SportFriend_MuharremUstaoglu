@@ -104,3 +104,5 @@ C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\Spor
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\EventWindow.baml
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\AddDemandWindow.g.cs
 C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\AddDemandWindow.baml
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SignUpWindow.g.cs
+C:\Users\Muharrem\Desktop\MuharremUstaoglu_301\SportFriend_MuharremUstaoglu\SportFriend\obj\Debug\netcoreapp3.0\SignUpWindow.baml

@@ -22,7 +22,7 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
 
-                            <Button x:Name="btnJoin" Content="Join" FontSize="20"/>
+                            <Button x:Name="btnJoin" Content="Join" FontSize="20" Click="btnJoin_Click"/>
                          
 
                         </DataTemplate>
@@ -58,7 +58,7 @@
         <DataGrid x:Name="dgAddEvent2" RowDetailsVisibilityMode="VisibleWhenSelected">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Binding="{ Binding Path=EventName}" Header="Event Name"></DataGridTextColumn>
-                <DataGridTextColumn Width="120" Binding="{ Binding Path=UserName}"  Header="Event Participator"></DataGridTextColumn>
+                <DataGridTextColumn Width="120" Binding="{ Binding Path=FriendUser.UserName}"  Header="Event Participator"></DataGridTextColumn>
                 
             </DataGrid.Columns>
 

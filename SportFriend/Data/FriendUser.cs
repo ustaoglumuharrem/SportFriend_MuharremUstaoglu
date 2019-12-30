@@ -28,7 +28,7 @@ namespace SportFriend.Data
         public string Password { get; set; }
 
 
-        public DateTime CreatedDate { get; set; }
+        
 
         public int RoleId { get; set; }
 
