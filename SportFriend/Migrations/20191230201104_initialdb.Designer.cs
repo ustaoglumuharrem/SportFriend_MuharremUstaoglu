@@ -10,7 +10,7 @@ using SportFriend.Data;
 namespace SportFriend.Migrations
 {
     [DbContext(typeof(SportFriendDb))]
-    [Migration("20191230154218_initialdb")]
+    [Migration("20191230201104_initialdb")]
     partial class initialdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,29 +78,14 @@ namespace SportFriend.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<int>("FriendUserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Events");
+                    b.HasIndex("FriendUserId");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            EventCreator = "Muharrem Ustaoğlu",
-                            EventDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(2016),
-                            EventLocation = "İstanbul",
-                            EventName = "İstanbul Marathon",
-                            EventType = "Running"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            EventCreator = "Muharrem Ustaoğlu",
-                            EventDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(2012),
-                            EventLocation = "Antalya",
-                            EventName = "Antalya Swimming",
-                            EventType = "Swimming"
-                        });
+                    b.ToTable("Events");
                 });
 
             modelBuilder.Entity("SportFriend.Data.FriendUser", b =>
@@ -264,6 +249,15 @@ namespace SportFriend.Migrations
                             RoleContent = "User",
                             RoleIdentification = 2
                         });
+                });
+
+            modelBuilder.Entity("SportFriend.Data.Events", b =>
+                {
+                    b.HasOne("SportFriend.Data.FriendUser", "FriendUser")
+                        .WithMany()
+                        .HasForeignKey("FriendUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

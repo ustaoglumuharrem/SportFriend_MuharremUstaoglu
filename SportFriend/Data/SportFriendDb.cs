@@ -94,7 +94,7 @@ namespace SportFriend.Data
 
                 new FriendUser
                 {
-                    Id = 1,
+                   Id=1,
                     Name = "Muharrem",
                     Surname = "Ustaoglu",
                     UserName = "Muharrem",
@@ -186,97 +186,97 @@ namespace SportFriend.Data
 
 
 
-          /*  modelBuilder.Entity<Demands>().HasData(
+            /*  modelBuilder.Entity<Demands>().HasData(
 
-                new Demands
-                {
-                   Id=1,
-                   Creator="Muharrem",
-                   Participator=null,
-                   Content="Basketball",
-                   Location="Hisarüstü",
-                   Time=new DateTime(2020,01,01)
-
-
-                }
-               
-
-            );
-            modelBuilder.Entity<Demands>().HasData(
-
-         new Demands
-         {
-             Id = 2,
-             Creator = "Melike",
-             Participator = null,
-             Content = "Tennis",
-             Location = "Caddebostan",
-             Time = new DateTime(2020, 01, 02)
+                  new Demands
+                  {
+                     Id=1,
+                     Creator="Muharrem",
+                     Participator=null,
+                     Content="Basketball",
+                     Location="Hisarüstü",
+                     Time=new DateTime(2020,01,01)
 
 
-         }
-       
-     );
+                  }
 
-            modelBuilder.Entity<Demands>().HasData(
 
-       
-         new Demands
-         {
-             Id = 3,
-             Creator = "Kemal",
-             Participator = null,
-             Content = "Fitness",
-             Location = "Beşiktaş",
-             Time = new DateTime(2020, 01, 03)
+              );
+              modelBuilder.Entity<Demands>().HasData(
 
-         }
+           new Demands
+           {
+               Id = 2,
+               Creator = "Melike",
+               Participator = null,
+               Content = "Tennis",
+               Location = "Caddebostan",
+               Time = new DateTime(2020, 01, 02)
 
-     );
 
-    */
+           }
 
-            modelBuilder.Entity<Events>().HasData(
+       );
 
-               new Events
-               {
-                   Id = 1,
-                   EventCreator="Muharrem Ustaoğlu",
-                     EventName="İstanbul Marathon",
-                      EventLocation="İstanbul",
-                       EventType="Running",
-                        EventDate=new DateTime(2020-3-1)
-                   
-                   
+              modelBuilder.Entity<Demands>().HasData(
 
-               }
-            
+
+           new Demands
+           {
+               Id = 3,
+               Creator = "Kemal",
+               Participator = null,
+               Content = "Fitness",
+               Location = "Beşiktaş",
+               Time = new DateTime(2020, 01, 03)
+
+           }
+
+       );
 
 
 
+              modelBuilder.Entity<Events>().HasData(
 
-           );
+                 new Events
+                 {
+                     Id = 1,
+                     EventCreator="Muharrem Ustaoğlu",
+                       EventName="İstanbul Marathon",
+                        EventLocation="İstanbul",
+                         EventType="Running",
+                          EventDate=new DateTime(2020-3-1)
 
-            modelBuilder.Entity<Events>().HasData(
 
-          
-               new Events
-               {
-                   Id = 2,
-                   EventCreator = "Muharrem Ustaoğlu",
-                   EventName = "Antalya Swimming",
-                   EventLocation = "Antalya",
-                   EventType = "Swimming",
-                   EventDate = new DateTime(2020 - 7 - 1)
 
-               }
+                 }
 
 
 
 
 
-           );
+             );
 
+              modelBuilder.Entity<Events>().HasData(
+
+
+                 new Events
+                 {
+                     Id = 2,
+                     EventCreator = "Muharrem Ustaoğlu",
+                     EventName = "Antalya Swimming",
+                     EventLocation = "Antalya",
+                     EventType = "Swimming",
+                     EventDate = new DateTime(2020 - 7 - 1)
+
+                 }
+
+
+
+
+
+             );
+               */
 
 
         }

@@ -28,6 +28,10 @@ namespace SportFriend.Data
 
         public DateTime EventDate { get; set; }
 
+        
+        public int FriendUserId { get; set; }
+       
+        public virtual FriendUser FriendUser { get; set; }
 
 
 

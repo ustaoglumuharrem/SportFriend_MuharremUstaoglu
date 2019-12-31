@@ -10,7 +10,7 @@
 
 
 
-        <DataGrid x:Name="dgAddEvent1" RowDetailsVisibilityMode="VisibleWhenSelected">
+        <DataGrid x:Name="dgAddEvent1" RowDetailsVisibilityMode="VisibleWhenSelected" AutoGenerateColumns="False" >
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Binding="{ Binding Path=Id}" Header="Id"></DataGridTextColumn>
                 <DataGridTextColumn Width="120" Binding="{ Binding Path=EventCreator}"  Header="Creator"></DataGridTextColumn>
@@ -37,7 +37,7 @@
                         <DataTemplate>
 
                             
-                            <Button x:Name="btnDelete" Content="Delete" FontSize="20"/>
+                            <Button x:Name="btnDelete" Content="Delete" FontSize="20" Click="btnDelete_Click"/>
 
                         </DataTemplate>
 
@@ -55,7 +55,7 @@
         </DataGrid>
 
 
-        <DataGrid x:Name="dgAddEvent2" RowDetailsVisibilityMode="VisibleWhenSelected">
+        <DataGrid x:Name="dgAddEvent2" RowDetailsVisibilityMode="VisibleWhenSelected" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Binding="{ Binding Path=EventName}" Header="Event Name"></DataGridTextColumn>
                 <DataGridTextColumn Width="120" Binding="{ Binding Path=FriendUser.UserName}"  Header="Event Participator"></DataGridTextColumn>

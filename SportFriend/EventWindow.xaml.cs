@@ -32,6 +32,8 @@ namespace SportFriend
             events.EventType = txtType1.Text;
             events.EventLocation = txtLocation1.Text;
             events.EventDate = datePicker1.SelectedDate.Value;
+            events.FriendUserId =1;
+
 
 
             SportFriendDb database = new SportFriendDb();
@@ -46,6 +48,7 @@ namespace SportFriend
             txtType1.Text = "";
             txtLocation1.Text = "";
             datePicker1.SelectedDate = DateTime.Now;
+            
 
             CreatedEventWindow createdEventWindow = new CreatedEventWindow(null);
             createdEventWindow.dgAddEvent1.Items.Refresh();

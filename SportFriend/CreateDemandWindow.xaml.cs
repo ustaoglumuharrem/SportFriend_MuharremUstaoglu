@@ -22,8 +22,10 @@ namespace SportFriend
 
         private SportFriendDb sportFriendDb= new SportFriendDb();
         private FriendUser loginUser;
+        List<Demands> list;
         public CreateDemandWindow(FriendUser friendUser)
         {
+            list = sportFriendDb.Demands.OrderBy(f => f.Time).ToList<Demands>();
             
             loginUser = friendUser;
             
@@ -39,14 +41,32 @@ namespace SportFriend
         public void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
 
-            var list = sportFriendDb.Demands.OrderBy(d => d.Time).Select(p => new { p.Id, p.Creator, p.Content, p.Location, p.Time }).ToList();
+           // var list = sportFriendDb.Demands.OrderBy(d => d.Time).Select(p => new { p.Id, p.Creator, p.Content, p.Location, p.Time }).ToList();
             dgAddDemand.ItemsSource = list;
+            dgMatch.ItemsSource = list;
+
         }
 
+      
 
-       
+        private void btnJoin_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You matched! You can see below!");
+            Demands demands = dgAddDemand.SelectedItem as Demands;
 
-        
-        
+            demands.Participator = loginUser.Name;
+            sportFriendDb.Demands.Update(demands);
+            sportFriendDb.SaveChanges();
+
+            dgMatch.Items.Refresh();
+
+
+
+
+
+
+
+
+        }
     }
 }

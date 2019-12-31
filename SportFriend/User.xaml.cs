@@ -42,7 +42,9 @@ namespace SportFriend
         {
 
             if (MessageBox.Show("Are you sure?", "Yes", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
+         {
+                
+               
                 this.Close();
             }
         }

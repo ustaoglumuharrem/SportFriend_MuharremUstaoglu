@@ -25,23 +25,6 @@ namespace SportFriend.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Events",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    EventCreator = table.Column<string>(maxLength: 50, nullable: false),
-                    EventName = table.Column<string>(nullable: false),
-                    EventType = table.Column<string>(maxLength: 50, nullable: false),
-                    EventLocation = table.Column<string>(maxLength: 50, nullable: false),
-                    EventDate = table.Column<DateTime>(maxLength: 100, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Events", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "FriendUser",
                 columns: table => new
                 {
@@ -89,13 +72,28 @@ namespace SportFriend.Migrations
                     table.PrimaryKey("PK_UserRoles", x => x.Id);
                 });
 
-            migrationBuilder.InsertData(
-                table: "Events",
-                columns: new[] { "Id", "EventCreator", "EventDate", "EventLocation", "EventName", "EventType" },
-                values: new object[,]
+            migrationBuilder.CreateTable(
+                name: "Events",
+                columns: table => new
                 {
-                    { 1, "Muharrem Ustaoğlu", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(2016), "İstanbul", "İstanbul Marathon", "Running" },
-                    { 2, "Muharrem Ustaoğlu", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(2012), "Antalya", "Antalya Swimming", "Swimming" }
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EventCreator = table.Column<string>(maxLength: 50, nullable: false),
+                    EventName = table.Column<string>(nullable: false),
+                    EventType = table.Column<string>(maxLength: 50, nullable: false),
+                    EventLocation = table.Column<string>(maxLength: 50, nullable: false),
+                    EventDate = table.Column<DateTime>(maxLength: 100, nullable: false),
+                    FriendUserId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Events", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Events_FriendUser_FriendUserId",
+                        column: x => x.FriendUserId,
+                        principalTable: "FriendUser",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -127,6 +125,11 @@ namespace SportFriend.Migrations
                     { 1, "Admin", 1 },
                     { 2, "User", 2 }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Events_FriendUserId",
+                table: "Events",
+                column: "FriendUserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -138,13 +141,13 @@ namespace SportFriend.Migrations
                 name: "Events");
 
             migrationBuilder.DropTable(
-                name: "FriendUser");
-
-            migrationBuilder.DropTable(
                 name: "RoleIdentifications");
 
             migrationBuilder.DropTable(
                 name: "UserRoles");
+
+            migrationBuilder.DropTable(
+                name: "FriendUser");
         }
     }
 }

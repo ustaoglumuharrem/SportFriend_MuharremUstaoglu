@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CreateDemandWindow" Height="600" Width="800" Loaded="Window_Loaded_1" ResizeMode="NoResize">
     <StackPanel>
-        <DataGrid x:Name="dgAddDemand" RowDetailsVisibilityMode="VisibleWhenSelected">
+        <DataGrid x:Name="dgAddDemand" RowDetailsVisibilityMode="VisibleWhenSelected" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="100" Binding="{ Binding Path=Id}" Header="Id"></DataGridTextColumn>
                 <DataGridTextColumn Width="140" Binding="{ Binding Path=Creator}"  Header="Creator"></DataGridTextColumn>
@@ -18,7 +18,7 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
 
-                            <Button x:Name="btnJoin" Content="Join" FontSize="20"/>
+                            <Button x:Name="btnJoin" Content="Join" FontSize="20" Click="btnJoin_Click_1"/>
 
                         </DataTemplate>
 
@@ -34,6 +34,23 @@
 
 
         <Button  Name="btnAdd"  Content="+ Add demand" HorizontalAlignment="Center" FontSize="22" Margin="0,0,0,0"  Width="317" Click="btnAdd_Click"  />
+
+        <DataGrid x:Name="dgMatch" RowDetailsVisibilityMode="VisibleWhenSelected" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Creator}"  Header="Creator"></DataGridTextColumn>
+                <DataGridTextColumn Width="140" Binding="{ Binding Path=Participator}"  Header="Participator"></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+
+
+
+
+
 
 
 

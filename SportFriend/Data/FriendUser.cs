@@ -7,7 +7,7 @@ namespace SportFriend.Data
 {
     public class FriendUser
     {
-        [Required]
+       
         public int Id { get; set; }
 
 
