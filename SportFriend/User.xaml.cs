@@ -41,12 +41,13 @@ namespace SportFriend
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
 
-            if (MessageBox.Show("Are you sure?", "Yes", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show("Sing in with another user?", "Yes", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
          {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
                 
-               
-                this.Close();
             }
+            this.Close();
         }
 
         private void CreateDemand_Click(object sender, RoutedEventArgs e)

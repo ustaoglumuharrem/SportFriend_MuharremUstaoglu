@@ -36,7 +36,7 @@ namespace SportFriend
 
             SportFriendDb database = new SportFriendDb();
             database.Demands.Add(demand);
-
+            
             database.SaveChanges();
             MessageBox.Show("Demand Created");
 
@@ -48,6 +48,7 @@ namespace SportFriend
 
             CreateDemandWindow createDemandWindow = new CreateDemandWindow(null);
             createDemandWindow.dgAddDemand.Items.Refresh();
+            
             this.Close();
 
         }
